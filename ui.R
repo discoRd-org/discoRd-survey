@@ -22,7 +22,6 @@ ui <- tagList(
     id = "navbar_main",
     tabPanel("discoRd-survey",
              shinyjs::useShinyjs(),
-             shinybusy::add_busy_spinner(),
              discoRd_survey_tab),
     tabPanel("get-togetheR-survey",
              togetheR_survey_tab),

@@ -49,6 +49,9 @@ server <- function(input, output, session){
       module_id = "discoRd_page5"
     ),
     link_id = "discoRd_quetzio"
+    # , output_gsheet = T,
+    # output_gsheet_id = discoRd_output_ss,
+    # output_gsheet_sheetname = "Answers_discoRd"
   )
   
   ## Observer to update the progress bar and show THANK YOU modal ####
@@ -85,6 +88,9 @@ server <- function(input, output, session){
     source_gsheet_sheetname = "Questions_getTogethR",
     desc_gsheet_sheetname = "Description_getTogethR",
     module_id = "getTogethR_module"
+    # , output_gsheet = T,
+    # output_gsheet_id = discoRd_output_ss,
+    # output_gsheet_sheetname = "Answers_getTogethR"
   )
   
   # observer to trigger modal dialog
