@@ -1,0 +1,25 @@
+.navbar-default {
+  background: transparent;
+  border: none;
+}
+
+.navbar-brand {
+  display:none;
+}
+
+.navbar-nav { 
+  width: 100%;
+  text-align: center;
+}
+  
+.navbar-nav > li {
+  display: inline-block;
+  float: none;
+}
+  
+.navbar-nav > li > a {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 2rem;
+        font-family: Monospace;
+}
