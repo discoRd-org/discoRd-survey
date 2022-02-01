@@ -20,7 +20,9 @@ custom_txt_discoRd <- list(
 ## If the App won't load because of too many redings in deauthorized form
 # you can contact me to get the secrets.
 
-googlesheets4::gs4_auth(
-  email = Sys.getenv("G_SERVICE_MAIL"),
-  path = Sys.getenv("G_SERVICE_ACCOUNT")
-)
+googlesheets4::gs4_death()
+
+#googlesheets4::gs4_auth(
+#  email = Sys.getenv("G_SERVICE_MAIL"),
+#  path = Sys.getenv("G_SERVICE_ACCOUNT")
+#)
