@@ -4,43 +4,43 @@ server <- function(input, output, session){
   
   ## definition of quetzios in a link (every quetzio is one page) ####
   
-  discoRd_quetzio <- quetzio_link_server$new(
-    page_1 = quetzio_server$new(
+  discoRd_quetzio <- QuetzioLink_create(
+    page_1 = Quetzio_create(
       source_method = "gsheet",
       source_gsheet_id = discoRd_survey_ss,
       source_gsheet_sheetname = "Questions_discoRd_Page1",
       module_id = "discoRd_page1",
       custom_txts = custom_txt_discoRd
     ),
-    page_2 = quetzio_server$new(
+    page_2 = Quetzio_create(
       source_method = "gsheet",
       source_gsheet_id = discoRd_survey_ss,
       source_gsheet_sheetname = "Questions_discoRd_Page2",
       module_id = "discoRd_page2",
       custom_txts = custom_txt_discoRd
     ),
-    robot_check = quetzio_server$new(
+    robot_check = Quetzio_create(
       source_method = "gsheet",
       source_gsheet_id = discoRd_survey_ss,
       source_gsheet_sheetname = "Questions_discoRd_robot_check",
       module_id = "discoRd_robot_check",
       custom_txts = custom_txt_discoRd
     ),
-    page_3 = quetzio_server$new(
+    page_3 = Quetzio_create(
       source_method = "gsheet",
       source_gsheet_id = discoRd_survey_ss,
       source_gsheet_sheetname = "Questions_discoRd_Page3",
       module_id = "discoRd_page3",
       custom_txts = custom_txt_discoRd
     ),
-    page_4 = quetzio_server$new(
+    page_4 = Quetzio_create(
       source_method = "gsheet",
       source_gsheet_id = discoRd_survey_ss,
       source_gsheet_sheetname = "Questions_discoRd_Page4",
       module_id = "discoRd_page4",
       custom_txts = custom_txt_discoRd
     ),
-    page_5 = quetzio_server$new(
+    page_5 = Quetzio_create(
       source_method = "gsheet",
       source_gsheet_id = discoRd_survey_ss,
       source_gsheet_sheetname = "Questions_discoRd_Page5",
@@ -82,7 +82,7 @@ server <- function(input, output, session){
   
   # get-togetheR questionnaire definition
   
-  get_togethR_quetzio <- quetzio_server$new(
+  get_togethR_quetzio <- Quetzio_create(
     source_method = "gsheet",
     source_gsheet_id = discoRd_survey_ss,
     source_gsheet_sheetname = "Questions_getTogethR",

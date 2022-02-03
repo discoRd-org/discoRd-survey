@@ -39,7 +39,7 @@ body {
   color: #fff !important;
   background-color: #646f78 !important;
   border-color: #555 !important;
-  width: 400px !important;
+  width: 250px !important;
 }
 
 .progress-bar {
@@ -56,6 +56,11 @@ hr {
 
 .likert-input-radio-min, .likert-input-radio-max {
     background-color: #9792925e;
+    font-size: 0.9rem;
+}
+
+.likert-input-radio-label {
+  font-size: 0.8rem;
 }
 
 
@@ -66,4 +71,5 @@ hr {
 #getTogethR_module_form .quetzio_description {
       padding-bottom: 10px !important;
 }
+
 

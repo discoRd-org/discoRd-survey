@@ -10,7 +10,7 @@ discoRd_survey_tab <- fluidPage(
            shinyWidgets::progressBar("discoRd_survey_progress",
                                      0,
                                      title = "Progress on the survey")),
-           shiny.quetzio::quetzio_link_UI("discoRd_quetzio")
+           shiny.quetzio::QuetzioLink_UI("discoRd_quetzio")
   )
 )
 
@@ -27,6 +27,6 @@ togetheR_survey_tab <- fluidPage(
       tags$p("Please note, at its heart, the get-togethR event is a casual get together of like minded people. It is not an academic exercise. If you’d rather attend and just chat with other people, that is fine! Please don’t feel pressured to perform or prepare ahead of time."),
       tags$p("Thank you for taking the time to help us grow this recurring event into a meaningful experience!"),
 ),
-      shiny.quetzio::quetzio_UI("getTogethR_module")
+      shiny.quetzio::Quetzio_UI("getTogethR_module")
   )
 )
