@@ -1,3 +1,9 @@
+header_tab <- tags$div(
+  class = "header_plake",
+  tags$div(class = "mode_switch",
+           icon("sun"), materialSwitch("darkmode", value = F, inline = T), icon("moon"))
+)
+
 discoRd_survey_tab <- fluidPage(
   theme = "page.css",
   tags$div(class = "questionnaire_page",

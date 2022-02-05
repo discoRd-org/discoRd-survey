@@ -108,4 +108,17 @@ server <- function(input, output, session){
      
   })
   
+  # observer to trigger darkmode
+  
+  observeEvent(input$darkmode, ignoreInit = T, {
+    
+    toggleCssClass(
+      selector = "html", class = "dark-mode"
+    )
+    
+    updateMaterialSwitch(session, "dark-mode",
+                         if (input$darkmode) "Dark mode ON" else "Dark mode OFF")
+    
+  })
+  
 }

@@ -12,6 +12,7 @@ ui <- tagList(
   ),
   # use Waiter for loading screen
   useWaiter(),
+  shinyjs::useShinyjs(),
   waiterPreloader(
     fadeout = 300,
     color = "#d7d5d5"
@@ -21,9 +22,9 @@ ui <- tagList(
     title = "discoRd surveys",
     id = "navbar_main",
     tabPanel("discoRd-survey",
-             shinyjs::useShinyjs(),
              discoRd_survey_tab),
     tabPanel("get-togetheR-survey",
              togetheR_survey_tab),
-    theme = "navbar.css"
+    theme = "navbar.css",
+    header = header_tab
   ))
