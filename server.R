@@ -115,10 +115,6 @@ server <- function(input, output, session){
     toggleCssClass(
       selector = "html", class = "dark-mode"
     )
-    
-    updateMaterialSwitch(session, "dark-mode",
-                         if (input$darkmode) "Dark mode ON" else "Dark mode OFF")
-    
   })
   
 }
